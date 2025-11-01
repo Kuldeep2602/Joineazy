@@ -60,20 +60,22 @@ const StudentDashboard = () => {
           </p>
         </div>
 
-        {/* Assignments List */}
-        <div className="space-y-4">
+        {/* Assignments Grid */}
+        <div>
           {sortedAssignments.length === 0 ? (
             <div className="bg-white rounded-2xl border border-gray-200 p-12 text-center">
               <p className="text-gray-500">No assignments yet. Check back soon!</p>
             </div>
           ) : (
-            sortedAssignments.map(assignment => (
-              <AssignmentCard
-                key={assignment.id}
-                assignment={assignment}
-                onSubmitClick={handleSubmitClick}
-              />
-            ))
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {sortedAssignments.map(assignment => (
+                <AssignmentCard
+                  key={assignment.id}
+                  assignment={assignment}
+                  onSubmitClick={handleSubmitClick}
+                />
+              ))}
+            </div>
           )}
         </div>
       </div>
