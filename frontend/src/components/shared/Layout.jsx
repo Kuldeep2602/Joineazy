@@ -12,11 +12,10 @@ const Layout = ({ children }) => {
           <div className="bg-white/80 backdrop-blur-md border border-gray-200/50 rounded-2xl shadow-sm px-6 py-3">
             <div className="flex justify-between items-center">
               {/* Logo */}
-              <div className="flex items-center space-x-3">
-                <img src="/image.png" alt="JoinEazy Logo" className="w-10 h-10 object-contain" />
+              <div className="flex items-center space-x-4">
+                <img src="/image.png" alt="JoinEazy Logo" className="w-16 h-16 object-contain" />
                 <div>
-                  <h1 className="text-lg font-bold text-gray-900">JoinEazy</h1>
-                  <p className="text-xs text-gray-500 capitalize">{currentUser?.role} Portal</p>
+                  <p className="text-lg font-semibold text-gray-700 capitalize">{currentUser?.role} Portal</p>
                 </div>
               </div>
               

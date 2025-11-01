@@ -23,9 +23,8 @@ const Login = () => {
         {/* Logo and Title */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center mb-4">
-            <img src="/image.png" alt="JoinEazy Logo" className="w-20 h-20 object-contain" />
+            <img src="/image.png" alt="JoinEazy Logo" className="w-32 h-32 object-contain" />
           </div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">JoinEazy</h1>
           <p className="text-gray-500 text-sm">Select your role to continue</p>
         </div>
 
